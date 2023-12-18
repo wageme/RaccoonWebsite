@@ -1,0 +1,101 @@
+<link rel="icon" href="raccoon-rounded.png">
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>About</title>
+    <link rel="stylesheet" type="text/css" href="raccoonstyle.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-image: url('images/realistic-paper-style-abstract-ornamental-background_79603-2432.avif');
+          }
+      </style>
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="index.html">Home</a>
+      <a href="video.html">Videos</a>
+      <a href="rpanda.php">Red Pandas</a>
+      <a class="active">About</a>
+      <a href="forms.php">Apply</a>
+    </div>
+
+  </head>
+
+  <body>
+    <h1>ABOUT</h1>
+    <p style="text-align:center">Did you know that raccoons are cool?</p>
+
+    <br>
+    <center>
+      <table border="1" style="text-align:center">
+        <tr>
+          <th>Procyonidae</th>
+          <th>Continent</th>
+        </tr>
+        <tr>
+          <td>Raccoons</td>
+          <td>North & South America</td>
+        </tr>
+        <tr>
+          <td>Ringtails</td>
+          <td>North America</td>
+        </tr>
+        <tr>
+          <td>Cacomistles</td>
+          <td>South America</td>
+        </tr>
+        <tr>
+          <td>Coatis</td>
+          <td>South/Central America</td>
+        </tr>
+        <tr>
+          <td>Kinkajous</td>
+          <td>South/Central America</td>
+        </tr>
+        <tr>
+          <td>Olingo</td>
+          <td>South/Central America</td>
+        </tr>
+        <tr>
+          <td>Olinguitos</td>
+          <td>South America</td>
+        </tr>
+      </table>
+      <br>
+
+      <button type="button" onclick="firstPopUp()">Confirm Example</button>
+      <br>
+      <br>
+      <script>
+        // Display number of days until Raccoon Day
+        const now = new Date();
+        const raccoonDay = new Date(2002,10,1);
+        const oneDay = 24 * 60 * 60 * 1000;
+        daysTilRaccDay = Math.round((raccoonDay - now) / oneDay / 365 + 365)
+        document.write("Days until International Raccoon Appreciation Day (Oct 1st): " + daysTilRaccDay);
+      </script>
+      <br>
+      <br>
+      <button type="button" onclick="change()">Press this Button!</button>
+      <p id="myText"
+        onmouseover="this.style.color='Green'"
+        onmouseleave="this.style.color='Black'">
+        Nothing here :)</p>
+      <script src="myScript.js"></script>
+      
+      <br>
+
+      <p>Page first accessed on: </p>
+      <script>
+        if (getCookie("date_accessed") == null || getCookie("date_accessed") == "") {
+          document.cookie = "date_accessed=" + now + ";";
+          document.writeln("<b>You have just visited this page for the first time on</b><br>");
+        }
+        document.write(getCookie("date_accessed"));
+      </script>
+    </center>
+  </body>
+</html>
